@@ -1,2 +1,2 @@
-import"./assets/styles-f8611b4a.js";console.log("sanckbar");
+import"./assets/styles-bf247833.js";import{i as o}from"./assets/vendor-77e16229.js";const t=document.querySelector(".form");t.addEventListener("submit",function(i){i.preventDefault();const s=Number(t.delay.value),m=t.state.value;new Promise((e,r)=>{setTimeout(()=>{m==="fulfilled"?e(s):r(s)},s)}).then(e=>{console.log(`✅ Fulfilled promise in ${e}ms`),o.success({title:"Success",message:`✅ Fulfilled promise in ${e}ms`,position:"topRight"})}).catch(e=>{console.log(`❌ Rejected promise in ${e}ms`),o.error({title:"Error",message:`❌ Rejected promise in ${e}ms`,position:"topRight"})})});
 //# sourceMappingURL=commonHelpers2.js.map
